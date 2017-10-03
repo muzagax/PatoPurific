@@ -5,11 +5,11 @@
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
       <Diagram DiagramId="b31bdba54fb94f129f235858b277c66f" Name="Diagram1">
-        <EntityTypeShape EntityType="patopurificModel.usuario" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="patopurificModel.usuario" Width="1.5" PointX="9.875" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="patopurificModel.AspNetRoles" Width="1.5" PointX="1.5" PointY="5.875" />
         <EntityTypeShape EntityType="patopurificModel.AspNetUserClaims" Width="1.5" PointX="3" PointY="14" />
         <EntityTypeShape EntityType="patopurificModel.AspNetUserLogins" Width="1.5" PointX="3" PointY="11.5" />
-        <EntityTypeShape EntityType="patopurificModel.AspNetUsers" Width="1.5" PointX="0.75" PointY="0.75" />
+        <EntityTypeShape EntityType="patopurificModel.AspNetUsers" Width="1.5" PointX="2.75" PointY="1" />
         <EntityTypeShape EntityType="patopurificModel.permisos" Width="1.5" PointX="2.25" PointY="9" />
         <EntityTypeShape EntityType="patopurificModel.proyecto" Width="1.5" PointX="5.25" PointY="1.625" />
         <AssociationConnector Association="patopurificModel.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" />

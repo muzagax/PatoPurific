@@ -240,6 +240,7 @@
     <Compile Include="Models\proyecto.cs">
       <DependentUpon>ModelUsuario.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\Roles.cs" />
     <Compile Include="Models\usuario.cs">
       <DependentUpon>ModelUsuario.tt</DependentUpon>
     </Compile>
