@@ -26,5 +26,11 @@ namespace ProyectoScrum.Models
         }
     
         public virtual DbSet<usuario> usuario { get; set; }
+        public virtual DbSet<AspNetRoles> AspNetRoles { get; set; }
+        public virtual DbSet<AspNetUserClaims> AspNetUserClaims { get; set; }
+        public virtual DbSet<AspNetUserLogins> AspNetUserLogins { get; set; }
+        public virtual DbSet<AspNetUsers> AspNetUsers { get; set; }
+        public virtual DbSet<permisos> permisos { get; set; }
+        public virtual DbSet<proyecto> proyecto { get; set; }
     }
 }

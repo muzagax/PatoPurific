@@ -12,25 +12,21 @@ namespace ProyectoScrum.Models
     using System;
     using System.Collections.Generic;
     
-    public partial class usuario
+    public partial class AspNetRoles
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public usuario()
+        public AspNetRoles()
         {
-            this.proyecto = new HashSet<proyecto>();
+            this.AspNetUsers = new HashSet<AspNetUsers>();
+            this.permisos = new HashSet<permisos>();
         }
     
-        public string nombre { get; set; }
-        public string cedula { get; set; }
-        public string carne { get; set; }
-        public Nullable<bool> sexo { get; set; }
-        public System.DateTime fechaNac { get; set; }
-        public string email { get; set; }
-        public string id { get; set; }
-        public string apellidos { get; set; }
+        public string Id { get; set; }
+        public string Name { get; set; }
     
-        public virtual AspNetUsers AspNetUsers { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<proyecto> proyecto { get; set; }
+        public virtual ICollection<AspNetUsers> AspNetUsers { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<permisos> permisos { get; set; }
     }
 }
