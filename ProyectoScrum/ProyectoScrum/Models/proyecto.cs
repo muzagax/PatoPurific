@@ -20,5 +20,7 @@ namespace ProyectoScrum.Models
         public Nullable<System.DateTime> fechaInicio { get; set; }
         public Nullable<System.DateTime> fechaFinal { get; set; }
         public string lider { get; set; }
+    
+        public virtual usuario usuario { get; set; }
     }
 }

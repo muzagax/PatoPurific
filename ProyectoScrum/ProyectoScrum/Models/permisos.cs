@@ -17,13 +17,13 @@ namespace ProyectoScrum.Models
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public permisos()
         {
-            this.permisos_asociados_roles = new HashSet<permisos_asociados_roles>();
+            this.AspNetRoles = new HashSet<AspNetRoles>();
         }
     
         public int id_permiso { get; set; }
         public string permiso { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<permisos_asociados_roles> permisos_asociados_roles { get; set; }
+        public virtual ICollection<AspNetRoles> AspNetRoles { get; set; }
     }
 }

@@ -205,6 +205,18 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\AspNetRoles.cs">
+      <DependentUpon>ModelUsuario.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AspNetUserClaims.cs">
+      <DependentUpon>ModelUsuario.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AspNetUserLogins.cs">
+      <DependentUpon>ModelUsuario.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AspNetUsers.cs">
+      <DependentUpon>ModelUsuario.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\ModelUsuario.Context.cs">
@@ -223,28 +235,10 @@
       <DependentUpon>ModelUsuario.edmx</DependentUpon>
     </Compile>
     <Compile Include="Models\permisos.cs">
-      <DependentUpon>Roles.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\permisos_asociados_roles.cs">
-      <DependentUpon>Roles.tt</DependentUpon>
+      <DependentUpon>ModelUsuario.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\proyecto.cs">
-      <DependentUpon>Roles.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Roles.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Roles.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Roles.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Roles.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Roles.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Roles.edmx</DependentUpon>
+      <DependentUpon>ModelUsuario.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\usuario.cs">
       <DependentUpon>ModelUsuario.tt</DependentUpon>
@@ -269,16 +263,6 @@
       <DependentUpon>ModelUsuario.edmx</DependentUpon>
       <LastGenOutput>ModelUsuario.cs</LastGenOutput>
     </Content>
-    <Content Include="Models\Roles.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>Roles.edmx</DependentUpon>
-      <LastGenOutput>Roles.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="Models\Roles.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>Roles.edmx</DependentUpon>
-      <LastGenOutput>Roles.cs</LastGenOutput>
-    </Content>
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="ApplicationInsights.config">
@@ -290,13 +274,6 @@
     </EntityDeploy>
     <Content Include="Models\ModelUsuario.edmx.diagram">
       <DependentUpon>ModelUsuario.edmx</DependentUpon>
-    </Content>
-    <EntityDeploy Include="Models\Roles.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>Roles.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <Content Include="Models\Roles.edmx.diagram">
-      <DependentUpon>Roles.edmx</DependentUpon>
     </Content>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
