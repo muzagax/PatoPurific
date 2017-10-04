@@ -8,11 +8,11 @@ namespace ProyectoScrum.Models
     public class Roles
     {
 
-        public permisos modeloPermisos { get;  set; }
-        public AspNetRoles modeloNetRoles { get; set; }
+        public permisos ModeloPermisos { get;  set; }
+        public AspNetRoles ModeloNetRoles { get; set; }
         
-        public List<permisos> listaPermisos { get; set; }
+        public List<permisos> ListaPermisos { get; set; }
 
-        public List<AspNetRoles> listaRoles { get; set; }
+        public List<AspNetRoles> ListaRoles { get; set; }
     }
 }
